@@ -47,7 +47,7 @@ body{
     background-size: cover;
     background-position: top;
     position: relative;
-
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -162,6 +162,11 @@ backface-visibility: hidden;
     color: #777;
 }
 
+.btn--green{
+    background-color: rgba(40, 180, 133, 0.9);
+    color: #fff;
+}
+
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,.2);
@@ -188,6 +193,11 @@ backface-visibility: hidden;
 .btn--white::after {
     background-color: #fff;
 }
+
+.btn--green::after {
+    background-color: #fff;
+}
+
 
 .btn:hover::after {
     transform: scale(1.4) scaleY(1.6);
